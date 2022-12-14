@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // hàm tính diện tích tam giác
+        function tamGiac(a, b, c) {
+            let p = (a + b + c) / 2;
+            if (a + b > c || a + c > b || b + c > a) {
+                return sqrt(p * (p - a) * (p - b) * (p - c));
+            }
+        }
+
+        // đếm số lần xuất hiện
+        function dem(arr, x) {
+            let dem = 0;
+            for (let i = 0; i < arr.length; i++) {
+                if (x == arr[i]) {
+                    dem++;
+                }
+            }
+            return dem;
+        }
+
+        // tim so lon thu 2
+        function tim(arr) {
+            let temp = 0;
+            for (let i = 0; i < arr.length; i++) {
+                for (let j = 1; j < arr.length; j++) {
+                    if (arr[i] < arr[j]) {
+                        temp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = temp;
+                    }
+                }
+            }
+            // lay phan tu lon thu 2
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] != a[i + 1]) {
+                    return arr[i + 1];
+                }
+            }
+        }
+
+        // nhan vao 1 chuoi
+        var string = "Dung"
+        function chuoi(a) {
+            return a;
+        }
+        alert(chuoi(string));
+    </script>
+</body>
+
+</html>

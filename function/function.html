@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+
+<body>
+    <script>
+        // ham la 1 doan code de lam 1 chuc nang nhat dinh, co the tai su sung
+        /*  function giaithua(a) {
+             let result = 1;
+             for (let i = 1; i <= a; i++) {
+                 result = result * i;
+             }
+             document.write(result);
+         }
+         giaithua(5); */
+
+        // kiem tra ky tu nhap vao co phai la so hay la chu: isNaN de check ky tu hay la so
+        /* function check(kt) {
+            return isNaN(kt);
+        }
+        alert(check(2)); */
+
+        // kiem tra so nguyen duong
+        /* function nguyenDuong(a) {
+            if (a > 0 && a % 1 == 0) {
+                return true;
+            }
+            else return false;
+        }
+        document.write(nguyenDuong(3.8)); */
+
+        // bien toan cuc, bien cuc bo va pham vi cua bien, tham tri, tham chieu
+        // biến toàn cục: k nằm trong bất kì 1 cặp ngoặc nào cả
+        // biến cục bộ: nằm trong 1 hàm hoặc 1 cái gì đó, phạm vi sử dụng trong đó
+        // Khi 1 biến cục bộ được đặt tên giống biến toàn cục, thì trong phạm vi của nó được nó ưu tiên hơn
+        function test(arr) {
+            arr = [];
+            arr.push(5);
+            array.push(4);
+        }
+        let array = [1, 2, 3];
+        test(array);
+        alert(array);
+
+    </script>
+</body>
+
+</html>

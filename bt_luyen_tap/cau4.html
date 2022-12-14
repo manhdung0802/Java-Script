@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = +prompt("nhap vao a");
+        let b = +prompt("nhap vao b");
+        let arr = [];
+        for (let i = a; i <= b; i++) {
+            if (i % 3 == 0 && i > 20) {
+                arr.push(i);
+            }
+        }
+        if (arr.length > 0) {
+            alert(arr);
+        }
+        else { alert("khong co so nao thoa man"); }
+    </script>
+</body>
+
+</html>

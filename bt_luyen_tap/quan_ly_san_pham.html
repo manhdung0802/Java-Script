@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <p>Add product</p>
+        <input type="text" id="add">
+        <button onclick="addProduct()">Add</button>
+        <p>Display all products</p>
+    </div>
+    <table id="displayArea" border="1"></table>
+    <div id="edit">
+
+    </div>
+    <script>
+        let listProduct = ['ip12', 'note 10', 's10', 'ip3'];
+        displayAlll();
+        function displayAlll() {
+            let str = '<tr>\n' +
+                '<td>Product Name</td>\n' +
+                '<td></td>\n' + '<td>'
+                + listProduct.length
+                + ' product</td>\n'
+                + '</tr>';
+            for (let i = 0; i < listProduct.length; i++) {
+                str += '<tr><td>' + listProduct[i] + '</td>'
+                    + '<td><button onclick=editProduct(' + i + ')>Edit</button></td>' +
+                    '<td><button onclick=deleteProduct(' + i + ')>Delete</button></td></tr>'
+            }
+            document.getElementById('displayArea').innerHTML = str;
+        }
+        function addProduct() {
+            let productName = document.getElementById('add').value;
+            document.getElementById('add').value = '';
+            listProduct.push(productName);
+            console.log(listProduct);
+            displayAlll();
+        }
+        function deleteProduct(index) {
+            listProduct.splice(index, 1);
+            displayAlll();
+        }
+        function editProduct(index) {
+            let newName = prompt('Enter new name');
+            listProduct[index] = newName;
+            displayAlll();
+        }
+    </script>
+</body>
+
+</html>

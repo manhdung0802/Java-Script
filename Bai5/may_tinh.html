@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="src"> <br>
+    <button onclick="nhap(1)">1</button>
+    <button onclick="nhap(2)">2</button>
+    <button onclick="nhap(3)">3</button>
+    <button onclick="nhap('+')">+</button> <br>
+    <button onclick="nhap(4)">4</button>
+    <button onclick="nhap(5)">5</button>
+    <button onclick="nhap(6)">6</button>
+    <button onclick="nhap('-')">-</button> <br>
+    <button onclick="nhap(7)">7</button>
+    <button onclick="nhap(8)">8</button>
+    <button onclick="nhap(9)">9</button>
+    <button onclick="nhap('*')">*</button> <br>
+    <button onclick="tinh()">ket qua</button>
+    <button onclick="nhap('/')">/</button> <br>
+    <button onclick="xoa()">xoa</button>
+    <script>
+        function nhap(x) {
+            document.getElementById('src').value += x;
+        }
+        function tinh() {
+            let y = document.getElementById('src').value;
+            document.getElementById('src').value = eval(y);
+        }
+        function xoa() {
+            document.getElementById('src').value = 0;
+        }
+    </script>
+</body>
+
+</html>

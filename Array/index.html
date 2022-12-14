@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* let animals = [ // cach khai bao 1
+            "dog", //0
+            "cat", //1
+            "fish", //2
+            1, 2, 3 //....
+        ];
+        let animals2 = new Array( // cach khai bao 2
+            "dog", //0
+            "cat", //1
+            "fish", //2
+            1, 2, 3 //....
+        ) 
+        document.write(animals.length + '<br>'); // lay do dai mang
+        // cac phuong thuc tuong tac voi mang
+        // push: them 1 hoac nhieu phan tu vao cuoi mang
+        animals.push('new1', 'new2');
+        document.write(animals + '<br>');
+        // pop: xoa 1 phan tu o cuoi mang
+        animals.pop();
+        document.write(animals + '<br>');
+
+        // cap nhat phan tu mang
+        // cach 1
+        animals[2] = "fishhhh";
+        document.write(animals + '<br>');
+
+        // cach 2: splice: xoa hoac thay the phan tu trong mang
+        animals.splice(1, 3); // bat dau tu phan tu 1, xoa 3 phan tu
+        animals.splice(1, 1, "cattttt"); // thay the
+        //document.write(animals.toString()); // bien mang thanh chuoi
+
+        // join: in ra chuoi va thay dau phay bang ki tu minh muon
+        document.write(animals.join(' va ') + "<br>");
+
+        // shift: xoa phan tu o dau
+        // unshift: them phan tu o dau
+        animals.shift();
+        animals.unshift("1", "2");
+        //document.write(animals);
+
+        // indexof: kiem tra xem co phan tu do trong mang hay k, neu k thi return -1, co thi return vi tri phan tu do
+        document.write(animals.indexOf("cattttt")); */
+
+        // bai tap: tim phan tu xuat hien 2 lan trong mang
+        let numbers = [1, 2, 3, 3, 5, 6, 6, 6];
+        for (let i = 0; i < numbers.length - 2; i++) {
+            if (numbers[i] === numbers[i + 1] && numbers[i] != numbers[i + 2]) {
+                document.write('so ' + numbers[i] + " xuat hien 2 lan ");
+            }
+            document.write('<br>' + i + " ");
+        }
+
+        // mang 2 chieu: la mang ma phan tu la cac mang
+        let array2 = [
+            [1, 2, 3],
+            [4, 5, 6]
+        ]
+        document.write(array2[0][0]);
+
+    </script>
+</body>
+
+</html>

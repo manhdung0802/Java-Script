@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = [
+            [13, 14, 15, 12],
+            [25, 26, 27, 100],
+            [12, 13, 14, 123],
+            [12, 13, 14, 1],
+        ]
+        // nhap vao a, tim vi tri cua a trong mang
+        /* let a = prompt("nhap a");
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr[i].length; j++) {
+                if (a == arr[i][j]) {
+                    document.write(' hang ' + i + ' cot' + ' ' + j);
+                }
+            }
+        } */
+
+        // tinh tong tung hang
+        /* for (let i = 0; i < arr.length; i++) {
+            let tong = 0;
+            for (let j = 0; j < arr[i].length; j++) {
+                tong += arr[i][j];
+            }
+            document.write('tong hang ' + (i + 1) + ' la: ' + tong + '<br>');
+        } */
+
+        // tinh tong tung cot
+        /*for (let i = 0; i < arr[0].length; i++) {
+            tong = 0;
+            for (let j = 0; j < arr.length; j++) {
+                tong += arr[j][i];
+            }
+            document.write(`Tổng cột ${i + 1}: ${tong}<br>`);
+        }*/
+
+        // tinh tong duong cheo chinh
+        /*let tong = 0;
+        for (let i = 0; i < arr.length; i++) {
+            tong += arr[i][i];
+        }
+        document.write('tong duong cheo chinh la: ' + tong + '<br>');*/
+
+        // tinh tong duong cheo phu
+        let tong = 0;
+        for (let i = arr.length - 1; i >= 0; i--) {
+            tong += arr[i][arr.length - 1 - i];
+        }
+        document.write('tong duong cheo phu la: ' + tong + '<br>');
+
+
+
+    </script>
+</body>
+
+</html>

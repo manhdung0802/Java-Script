@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="can" placeholder="Can">
+    <input type="text" id="chi" placeholder="Chi">
+    <button onclick="tinhnam()">Tinh nam am lich</button>
+    <p id="result"></p>
+    <script>
+        function tinhnam() {
+            let can = +document.getElementById('can').value % 10;
+            let chi = +document.getElementById('chi').value % 12;
+            let can_arr = ['canh', 'tan', 'nham', 'quy', 'giap', 'at', 'binh', 'dinh', 'mau', 'ky'];
+            let chi_arr = ['than', 'dau', 'tuat', 'hoi', 'ty', 'suu', 'dan', 'meo', 'thin', 'ty', 'ngo', 'mui'];
+            document.getElementById('result').innerText = can_arr[can] + ' ' + chi_arr[chi];
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai La Trieu Phu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/ai-la-trieu-phu.css">
+</head>
+
+<body style="background-color: lightsalmon;">
+    <div class="content" style="position: relative;">
+        <h1 class="text-center my-5">AI LA TRIEU PHU</h1>
+        <h2 class="text-center my-5 mx-5" id="question">Nhấn Next để bắt đầu</h2>
+        <div class="d-grid gap-2 d-md-block text-center col">
+            <button id="A" onclick="checkResult(id,choi)" class="col-4 mx-3 btn btn-primary" type="button"></button>
+            <button id="B" onclick="checkResult(id,choi)" class="col-4 mx-3 btn btn-primary" type="button"></button>
+        </div>
+        <div class="d-grid gap-2 d-md-block text-center my-5 col">
+            <button id="C" onclick="checkResult(id,choi)" class="col-4 mx-3 btn btn-primary" type="button"></button>
+            <button id="D" onclick="checkResult(id,choi)" class="col-4 mx-3 btn btn-primary" type="button"></button>
+        </div>
+
+        <div class="text-center my-5">
+            <button style="display: none;" type="button" id="back" onclick="back(choi)"
+                class="btn btn-warning w-25 mx-5">Back</button>
+            <button type="button" id="next" onclick="next(choi)" class="btn btn-success w-25 mx-5">Next</button>
+            <button type="button" id="restart" onclick="restart()" class="btn btn-danger w-25 mx-5">Restart</button>
+        </div>
+        <div>
+            <h2 class="text-center" id="diem">Điểm của bạn: </h2>
+        </div>
+        <div class="mx-5">
+            <h2 class="" id="diem">Thêm câu hỏi của bạn: </h2>
+            <input type="text" id="ten_cau_hoi"> Tên câu hỏi <br>
+            <input type="text" id="dap_an_A"> Đáp án A <br>
+            <input type="text" id="dap_an_B"> Đáp án B <br>
+            <input type="text" id="dap_an_C"> Đáp án C <br>
+            <input type="text" id="dap_an_D"> Đáp án D <br>
+            <input type="text" id="dap_an_dung"> Đáp án đúng
+            <button id="add_question" onclick="add()">Thêm câu hỏi</button>
+            <button id="add_question" onclick="delete_question()">Xóa câu hỏi</button>
+        </div>
+    </div>
+
+    <div class="win_cls" id="win_id">
+        <button type="button" id="next_alert" onclick="next(choi)" class="next_btn btn btn-success w-25 mx-5">Bấm Next
+            để tiếp
+            tục</button>
+    </div>
+    <div class="restart_cls" id="restart_id">
+        <button type="button" id="restart_alert" onclick="restart()" class="restart_btn btn btn-warning w-25 mx-5">Chơi
+            lại từ
+            đầu</button>
+    </div>
+    <div class="end_game_cls" id="end_game_id">
+        <h2 class="end_game_text text-center" id="end_game_congrate"></h2>
+        <button type="button" id="end_game_alert" onclick="restart()" class="restart_btn btn btn-warning w-25 mx-5">Chơi
+            lại
+            từ
+            đầu</button>
+    </div>
+
+
+
+    <script src="js/ai la-trieu-phu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let ob = {
+            name: 'NA',
+            age: 24,
+            sayHi: function () {
+                alert(this.name + ' Dung');
+            }
+        }
+        //ob.sayHi();
+
+        let a = {
+            ten: 'Dung',
+            toan: 9,
+            ly: 6,
+            hoa: 3,
+            tinh: function () {
+                alert((this.hoa + this.toan + this.ly) / 3)
+            }
+        }
+        //a.tinh();
+
+        class Circle {
+            constructor(radius, color) {
+                this.radius = radius;
+                this.color = color;
+            }
+            getInfo() {
+                alert(this.radius + ' ' + this.color);
+            }
+        }
+        let x = new Circle(20, 'red');
+        let y = new Circle(25, 'green');
+
+        x.getInfo();
+        y.getInfo();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+
+<body>
+    <img src="actor2.jpg" alt="" id="abc" style="width: 20px;
+                                                position: relative;
+                                                left: 0px;
+                                                top:20px;
+                                                transition: 0.5s;">
+
+    <script>
+        let anh = document.getElementById('abc');
+        let key = true;
+        setInterval(() => {
+            if (parseInt(anh.style.left) <= 100 && key == true) {
+                anh.style.left = parseInt(anh.style.left) + 10 + 'px';
+                if (parseInt(anh.style.left) == 100) {
+                    key = false;
+                }
+            }
+
+            if (parseInt(anh.style.left) > 0 && key == false) {
+                anh.style.left = parseInt(anh.style.left) - 10 + 'px';
+                if (parseInt(anh.style.left) == 0) {
+                    key = true;
+                }
+            }
+        }, 100)
+        // neu di chuyen het man hinh thi se quay lai
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Cat {
+            constructor(name, weight) {
+                this.name = name;
+                this.weight = weight;
+            }
+            eat(x) {
+                this.weight += x / 3;
+                x.weight = 0;
+            }
+            getInfo() {
+                alert('Meo' + this.name + " nang" + this.weight);
+            }
+        }
+        class Mouse {
+            constructor(name, weight) {
+                this.name = name;
+                this.weight = weight;
+            }
+            getInfo() {
+                if (this.weight == 0) {
+                    alert('rip');
+                }
+                else {
+                    alert('Chuot' + this.name + ' nang' + this.weight);
+                }
+            }
+        }
+        let cat1 = new Cat('A', 20);
+        cat1.eat(6);
+        let mouse1 = new Mouse('J', 5);
+        cat1.eat(mouse1.weight);
+    </script>
+</body>
+
+</html>

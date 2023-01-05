@@ -13,7 +13,7 @@
         // hàm tính diện tích tam giác
         function tamGiac(a, b, c) {
             let p = (a + b + c) / 2;
-            if (a + b > c || a + c > b || b + c > a) {
+            if (a + b > c && a + c > b && b + c > a) {
                 return sqrt(p * (p - a) * (p - b) * (p - c));
             }
         }

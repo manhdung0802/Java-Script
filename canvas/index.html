@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+
+<body>
+    <img src="actor2.jpg" alt="" id="abc" style="width: 20px;
+                                                position: relative;
+                                                left: 20px;
+                                                top:20px;
+                                                transition: 0.5s;">
+    <!-- <button onclick="sangPhai()">Sang Phai</button>
+    <button onclick="sangTrai()">Sang Trai</button> -->
+    <script>
+        // function sangPhai() {
+        //     document.getElementById("abc").style.left = parseInt(document.getElementById("abc").style.left) + 50 + 'px';
+        //     // parseInt: chuyển về dạng số rồi mới cộng được
+        // }
+        // function sangTrai() {
+        //     document.getElementById("abc").style.left = parseInt(document.getElementById("abc").style.left) - 50 + 'px';
+        //     // parseInt: chuyển về dạng số rồi mới cộng được
+        // }
+        let anh = document.getElementById('abc');
+        // kiem tra tu ban phim
+        window.addEventListener('keydown', (x) => {
+            if (x.key == 'a') {
+                anh.style.left = parseInt(anh.style.left) - 50 + 'px';
+                console.log(anh.style.left);
+            }
+            if (x.key == 's') {
+                anh.style.top = parseInt(anh.style.top) + 50 + 'px';
+                console.log(anh.style.top);
+            }
+            if (x.key == 'd') {
+                anh.style.left = parseInt(anh.style.left) + 50 + 'px';
+            }
+            if (x.key == 'w') {
+                anh.style.top = parseInt(anh.style.top) - 50 + 'px';
+            }
+        }
+        )
+
+    </script>
+</body>
+
+</html>

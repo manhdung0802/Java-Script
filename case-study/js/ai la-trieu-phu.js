@@ -55,6 +55,7 @@ function checkResult(id, choi) {
 }, 1700);
 }
 function next(choi) {
+    document.getElementById('btn').style.display = 'block';
     resetBtn();
     document.getElementById('next').style.display = 'none';
     if (i < choi.cauHoi.length - 1) {

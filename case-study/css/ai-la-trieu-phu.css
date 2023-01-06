@@ -1,49 +1,50 @@
-.win_cls{
-    width: 700px;
-    height: 250px;
-    position: absolute;
-    background-color: lightgreen;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-    border-radius: 15px;
-    background-image: url(../img/win.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.win_cls {
+  width: 700px;
+  height: 250px;
+  position: absolute;
+  background-color: lightgreen;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  border-radius: 15px;
+  background-image: url(../img/win.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.restart_cls{
-    width: 700px;
-    height: 250px;
-    position: absolute;
-    background-color: lightslategray;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-    border-radius: 15px;
-    background-image: url(../img/lose.png);
-    background-size: contain;
+.restart_cls {
+  width: 700px;
+  height: 250px;
+  position: absolute;
+  background-color: lightslategray;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  border-radius: 15px;
+  background-image: url(../img/lose.png);
+  background-size: contain;
 }
-.end_game_cls{
-    width: 700px;
-    height: 250px;
-    position: absolute;
-    background-color: lightslategray;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-    border-radius: 15px;
-    background-image: url(../img/end.jpg);
-    background-size: contain;
+.end_game_cls {
+  width: 700px;
+  height: 250px;
+  position: absolute;
+  background-color: lightslategray;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  border-radius: 15px;
+  background-image: url(../img/end.jpg);
+  background-size: contain;
 }
-.next_btn, .restart_btn{
-    position: absolute;
-    top: 200px;
-    left: 200px;
+.next_btn,
+.restart_btn {
+  position: absolute;
+  top: 200px;
+  left: 200px;
 }
-.end_game_text{
-    position: absolute;
-    top: 25px;
+.end_game_text {
+  position: absolute;
+  top: 25px;
 }
